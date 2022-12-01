@@ -1,24 +1,25 @@
-# README
+# Ancestorb : Ancestry Tracker App 
+**Backend only, written in Ruby**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Make your ancestry tree and define relations between people.
 
-Things you may want to cover:
+Currently supports:
+- Absolutely nothing
 
-* Ruby version
+To Support:
+- Add persons, current data for a person:
+  - Name
+  - Birthdate
+  - Address
+- Add relation between persons, supported relations:
+  - Parents - Children
+  - Spouses (support polygamy)
+  - Siblings (supports adoption)
+- View relations between persons in one keyword, supported keywords:
+  - Parents (biological or otherwise)
+  - Children (biological or otherwise)
+  - Spouses (married or divorced)
+  - Siblings (biological or otherwise)
+  - Aunts and Uncles, i.e. siblings of parents
+  - Further Cousins? idk let me study some genealogy first
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
