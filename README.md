@@ -4,13 +4,15 @@
 Make your ancestry tree and define relations between people.
 
 Currently supports:
-- Absolutely nothing
-
-To Support:
 - Add persons, current data for a person:
   - Name
-  - Birthdate
+  - Sex
+  - Birthdate/Deathdate
   - Address
+  - Alive/Deceased
+  - Marriage Status
+
+To support:
 - Add relation between persons, supported relations:
   - Parents - Children
   - Spouses (support polygamy)
@@ -22,4 +24,3 @@ To Support:
   - Siblings (biological or otherwise)
   - Aunts and Uncles, i.e. siblings of parents
   - Further Cousins? idk let me study some genealogy first
-
