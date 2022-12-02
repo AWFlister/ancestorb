@@ -1,0 +1,14 @@
+TODO
+- People CRUD
+    - Add birth order, alive, marriage status (S/M/D)
+- Children-Parent CRUD
+    - 1 Child only 2 active Parents
+    - Get parent has option for divorced parents
+    - Divorced column on spouse join table
+    - Marriage date column on spouse join table
+    - Divorce date column on spouse join table
+    - Adopted column on children parent table
+- Sibling CRUD
+    - Add option to separate biological and adopted siblings
+- Spouse CRUD
+    - Support polygamy, but label divorced/deceased as appropriate
