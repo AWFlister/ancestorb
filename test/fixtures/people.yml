@@ -4,8 +4,48 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+Sakti:
+  id: 1
+  name: Sakti
+  sex: M
+  birthdate: 30-06-2000
+  address: Sleman, DIY
+  birth_order: 1
+  alive: true
+  marriage_status: S
+Lena:
+  id: 2
+  name: Lena
+  sex: F
+  birthdate: 30-01-2000
+  address: Sleman, DIY
+  birth_order: 1
+  alive: true
+  marriage_status: S
+Kiki:
+  id: 3
+  name: Kiki
+  sex: M
+  birthdate: 30-06-2028
+  address: Sleman, DIY
+  birth_order: 1
+  alive: true
+  marriage_status: S
+Aimi:
+  id: 4
+  name: Aimi
+  sex: F
+  birthdate: 30-06-2033
+  address: Sleman, DIY
+  birth_order: 2
+  alive: true
+  marriage_status: S
+Aosta:
+  id: 5
+  name: Aosta
+  sex: M
+  birthdate: 30-06-2049
+  address: Sleman, DIY
+  birth_order: 1
+  alive: true
+  marriage_status: S

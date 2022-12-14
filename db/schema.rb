@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_02_033104) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_14_055137) do
+  create_table "marriage_memberships", force: :cascade do |t|
+    t.integer "person_id", null: false
+    t.integer "marriage_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["marriage_id"], name: "index_marriage_memberships_on_marriage_id"
+    t.index ["person_id"], name: "index_marriage_memberships_on_person_id"
+  end
+
+  create_table "marriages", force: :cascade do |t|
+    t.date "marriage_date"
+    t.date "termination_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "people", force: :cascade do |t|
     t.string "name"
     t.string "sex"
@@ -24,4 +40,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_02_033104) do
     t.date "deathdate"
   end
 
+  add_foreign_key "marriage_memberships", "marriages"
+  add_foreign_key "marriage_memberships", "people"
 end
