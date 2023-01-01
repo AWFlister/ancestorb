@@ -23,8 +23,16 @@ class MarriagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update marriage" do
+  test "should divorce marriage, update marriage status of spouses" do
     put marriage_url(id: 1), params: { marriage: { termination_date: '30-06-2040' } }, as: :json
+    ai = Person.find 4
+    ao = Person.find 5
+    assert_equal ai.marriage_status, 'D'
+    assert_equal ao.marriage_status, 'D'
+    assert_empty ai.active_marriages
+    assert_empty ao.active_marriages
+    refute_includes ai.active_spouses, ao
+    refute_includes ao.active_spouses, ai
     assert_response :success
   end
 
